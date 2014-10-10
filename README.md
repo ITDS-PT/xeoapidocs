@@ -5,16 +5,21 @@ Welcomo the XEO API Documentation, this respository contains documentation and e
 
 This documentation is split in several pages, namely
 
+* Concepts
 * [Creating and Loading Instances](docs/instances.md)
-* Accessing/Changing atribute values
-* Lists of Objects
+* [Accessing/Changing atribute values](docs/values.md)
+* [Lists of Objects](docs/lists.md)
 * Attribute Metadata (Valid, Label, Required)
 * List of Values (LOV)
-* Documentation
+* Converting between old API and new AP
+* Reference
+
+## Important Notes
 
 For the purpose of this documentation assume the existance of a Demo.xemodel file with the following attributes:
 * name (String)
 * age (number)
+* height (number, decimals)
 * playSports (boolean)
 * dateBirth (date)
 * picture (binaryData)
