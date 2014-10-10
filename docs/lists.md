@@ -36,7 +36,7 @@ String name = "John";
 StateLov state = StateLov.SINGLE;
 Demo bestFriend = DemoFactory.get().load(SOME_BOUI);
 XEOCollection<Demo> demos = DemoFactory.get().list("select Demo where name = ? and state = ? and bestFriend = ?", name, state.getValue(), bestFriend.getBoui());
-
+```
 
 
 #### List with a given query and arguments (mode 2, " {} parameters")

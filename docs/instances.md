@@ -14,7 +14,7 @@ XEOModel parent = //loaded from somewhere
 Demo newDemo = DemoFactory.get().create(parent);
 ```
 
-**Loading an instance using the BOUI **
+**Loading an instance using the BOUI**
 ```java
 long boui = 1111;
 Demo loadedDemo = DemoFactory.get().load(boui);

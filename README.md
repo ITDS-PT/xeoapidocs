@@ -11,7 +11,7 @@ This documentation is split in several pages, namely
 * [Lists of Objects](docs/lists.md)
 * Attribute Metadata (Valid, Label, Required)
 * List of Values (LOV)
-* Converting between old API and new AP
+* [Converting between old API and new API](docs/switching.md)
 * Reference
 
 ## Important Notes
