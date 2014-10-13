@@ -5,7 +5,7 @@ Welcomo the XEO API Documentation, this respository contains documentation and e
 
 This documentation is split in several pages, namely
 
-* Concepts
+* [Concepts](docs/concepts.md)
 * [Creating and Loading Instances](docs/instances.md)
 * [Accessing/Changing atribute values](docs/values.md)
 * [Lists of Objects](docs/lists.md)
