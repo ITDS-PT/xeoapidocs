@@ -17,7 +17,7 @@ for (Demo demo : demos){
 #### List with a given query (no arguments)
 
 ```java
-XEOCollection<Demo> demos = DemoFactory.get().list("select Demo where creator = CTX_PERFORMER_BOUI");
+XEOCollection<Demo> demos = DemoFactory.get().list("creator = CTX_PERFORMER_BOUI");
 
 ```
 
@@ -27,7 +27,7 @@ XEOCollection<Demo> demos = DemoFactory.get().list("select Demo where creator = 
 String name = "John";
 StateLov state = StateLov.SINGLE;
 Demo bestFriend = DemoFactory.get().load(SOME_BOUI);
-XEOCollection<Demo> demos = DemoFactory.get().list("select Demo where name = ? and state = ? and bestFriend = ?", name, state, bestFriend);
+XEOCollection<Demo> demos = DemoFactory.get().list("name = ? and state = ? and bestFriend = ?", name, state, bestFriend);
 
 ```
 Note the use of StateLov and Demo instances directly, you could also use the following
@@ -35,7 +35,7 @@ Note the use of StateLov and Demo instances directly, you could also use the fol
 String name = "John";
 StateLov state = StateLov.SINGLE;
 Demo bestFriend = DemoFactory.get().load(SOME_BOUI);
-XEOCollection<Demo> demos = DemoFactory.get().list("select Demo where name = ? and state = ? and bestFriend = ?", name, state.getValue(), bestFriend.getBoui());
+XEOCollection<Demo> demos = DemoFactory.get().list("name = ? and state = ? and bestFriend = ?", name, state.getValue(), bestFriend.getBoui());
 ```
 
 
@@ -48,6 +48,23 @@ String name = "John";
 StateLov state = StateLov.SINGLE;
 StateLov state2 = StateLov.MARRIED;
 Demo bestFriend = DemoFactory.get().load(SOME_BOUI);
-XEOCollection<Demo> demos = DemoFactory.get().list("select Demo where (name = {1} and state = {2}) or (name = {1} and state = {3}) , name, state, state2 );
+XEOCollection<Demo> demos = DemoFactory.get().list(" (name = {1} and state = {2}) or (name = {1} and state = {3}) , name, state, state2 );
 
+```
+
+#### List created by specifying list options (fluent interface)
+
+You can also create a list like the following,  by specifying the set of options you want to apply to the list
+
+```java
+XEOCollection<Demo> demo = DemoFactory.get().listBuilder( "WHERE_CLAUSE" ) //Create the builder with a specific where clause
+			.cache( true ) //Boolean, use cache or not, defaults to true
+			.fetchSize( 40 ) //Page size (defaults to 50)
+			.fullText( "SOMETHING" ) //Fulltext search query to use (defaults to "")
+			.args( new Object[0] ) //Arguments as an array of objects
+			.argsList( "arg1", "arg2", "argN" ) //Arguments as a list of objects
+			.security( true ) //Whether to use security or not (defaults to true
+			.orderBy( "name DESC" ) //Order results by an attribute (defaults to "")
+			.execute(); //Create the List
+	.
 ```
