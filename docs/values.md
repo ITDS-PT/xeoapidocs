@@ -19,7 +19,7 @@ XEOAttributeCollection<Demo> family = demo.getFamily();
 
 ```
 
-#### Getters (Collections)
+#### Getters (Collections) - Iterating through a collection attribute 
 ```java
 Demo demo = DemoFactory.get().load(SOME_BOUI);
 XEOAttributeCollection<Demo> family = demo.getFamily();
@@ -64,4 +64,7 @@ XEOAttributeCollection<Demo> family = demo.getFamily();
 family.add(newFamily);
 
 ```
+
+
+
 
