@@ -14,10 +14,10 @@ This document explains how the XEOAPI 2.0 works in broad concepts.
 ### Instalation
 
 To install the XEOAPI you require two things:
-1. Add the xeoapi20.jar to the classpath (for instance to the base_lib/modules_libs folder)
-2. Install XEO Studio version 1.X or superior
-3. Activate the new API by going to Project Properties -> XEO Studio and check the  **Use XEO Studio New Style API** checkbox
-4. In the XEO Studio Builder view you can check the status of each build (whenever you save an XEOModel file, it triggers the new api build)
+* Add the xeoapi20.jar to the classpath (for instance to the base_lib/modules_libs folder)
+* Install XEO Studio version 1.X or superior
+* Activate the new API by going to Project Properties -> XEO Studio and check the  **Use XEO Studio New Style API** checkbox
+* In the XEO Studio Builder view you can check the status of each build (whenever you save an XEOModel file, it triggers the new api build)
 
 ### Source Folders
 
