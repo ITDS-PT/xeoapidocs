@@ -9,7 +9,7 @@ This documentation is split in several pages, namely
 * [Creating and Loading Instances](docs/instances.md)
 * [Accessing/Changing atribute values](docs/values.md)
 * [Lists of Objects](docs/lists.md)
-* Attribute Metadata (Valid, Label, Required)
+* [Attribute Metadata (Valid, Label, Required, Value Change)](docs/metadata.md)
 * List of Values (LOV)
 * [Converting between old API and new API](docs/switching.md)
 * Reference
@@ -17,7 +17,7 @@ This documentation is split in several pages, namely
 ## Important Notes
 
 For the purpose of this documentation assume the existance of a Demo.xemodel file with the following attributes:
-* name (String)
+* name (String)	
 * age (number)
 * height (number, decimals)
 * playSports (boolean)
