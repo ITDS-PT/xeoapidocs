@@ -5,16 +5,15 @@ Welcomo the XEO API Documentation, this respository contains documentation and e
 
 This documentation is split in several pages, namely
 
-* [Concepts](docs/concepts.md)
+* [Concepts and base API](docs/concepts.md)
 * [Creating and Loading Instances](docs/instances.md)
 * [Accessing/Changing atribute values](docs/values.md)
 * [Lists of Objects](docs/lists.md)
-* [Attribute Metadata (Valid, Label, Required, Value Change)](docs/metadata.md)
-* List of Values (LOV)
+* [Attribute Metadata (Valid, Label, Required, Value Change, etc.)](docs/metadata.md)
 * [Converting between old API and new API](docs/switching.md)
-* Reference
 
-## Important Notes
+
+## Example Object
 
 For the purpose of this documentation assume the existance of a Demo.xemodel file with the following attributes:
 * name (String)	

@@ -34,6 +34,8 @@ For each model, at least 4 classes are generated (take Demo as an example)
 - Demo (generated once, you can put your code in this class. Extends DemoBase)
 - DemoFactory (generated once, you can put your code in this class. Extends DemoFactoryBase)
 
+Also for each List of Values declared in a .xeolov file another class with be created. For each interface (*.ixeomodel) a Java interface will also be created.
+
 
 ### API Hierarchy (BaseClass)
 
