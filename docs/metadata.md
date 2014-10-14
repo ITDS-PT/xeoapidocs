@@ -1,6 +1,6 @@
 #Attribute Metadata
 
-If you want to access attribute metadata (label, disabled state, etc...) you must use attributes() API available, like the following:
+If you want to access attribute metadata (label, disabled state, etc...) you must use the **attributes()** API, like the following:
 
 #### Get a reference to the XEO Attribute
 ```java
@@ -60,9 +60,10 @@ You can also check if an attribute has a value or not, like the following:
     	//Name attribute value could be null or empty string
     }
     
-    //TODO: Check if this statement is valid for other types of attributes
 
 ```
+
+** Notice that, most types of attributes don't have a notion of "empty". Only Strings can be empty.**
 
 #### Metadata of specific types of attributes
 
