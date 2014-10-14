@@ -3,7 +3,7 @@ XEO API 2.0
 
 Welcomo the XEO API Documentation, this respository contains documentation and examples for the 2.0 version API of the XEO Framework (www.xeoframework.org)
 
-This documentation is split in several pages, namely
+This documentation is split in several pages, namely:
 
 * [Concepts and base API](docs/concepts.md)
 * [Creating and Loading Instances](docs/instances.md)
@@ -15,10 +15,10 @@ This documentation is split in several pages, namely
 
 ## Example Object
 
-For the purpose of this documentation assume the existance of a Demo.xemodel file with the following attributes:
-* name (String)	
+For the purpose of this documentation assume the existence of a Demo.xemodel file with the following attributes:
+* name (String)
 * age (number)
-* height (number, decimals)
+* height (number, with decimals)
 * playSports (boolean)
 * dateBirth (date)
 * picture (binaryData)
