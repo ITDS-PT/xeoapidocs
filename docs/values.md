@@ -37,7 +37,7 @@ Demo demo = DemoFactory.get().load(SOME_BOUI);
 
 demo.setName("John");
 demo.setAge(23);
-demo.setHeight(new BigDecimal("124,2"));
+demo.setHeight(new BigDecimal(124.2));
 java.util.Date date = new java.util.Date(System.currentTimeMilis());
 demo.setDateBirth(date);
 
@@ -50,7 +50,7 @@ demo.setPicture(pictureIFile);
 demo.setState(StateLov.SINGLE);
 
 Demo newBestFriend = DemoFactory.get().create();
-newBestFriend.setName('My Friend');
+newBestFriend.setName("My Friend");
 demo.setBestFriend(newBestFriend);
 
 ```
