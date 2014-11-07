@@ -5,12 +5,12 @@ Welcomo the XEO API Documentation, this respository contains documentation and e
 
 This documentation is split in several pages, namely:
 
-* [Concepts and base API](XEO_API/concepts)
-* [Creating and Loading Instances](XEO_API/instances)
-* [Accessing/Changing atribute values](XEO_API/values)
-* [Lists of Objects](XEO_API/lists)
-* [Attribute Metadata (Valid, Label, Required, Value Change, etc.)](XEO_API/metadata)
-* [Converting between old API and new API](XEO_API/switching)
+* [Concepts and base API](concepts)
+* [Creating and Loading Instances](instances)
+* [Accessing/Changing atribute values](values)
+* [Lists of Objects](lists)
+* [Attribute Metadata (Valid, Label, Required, Value Change, etc.)](metadata)
+* [Converting between old API and new API](switching)
 
 
 ## Example Object
