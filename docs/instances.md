@@ -38,6 +38,35 @@ As explained in the Concepts page, you can also include code in your Factory cla
         	return list("state = ?", StateLov.MARRIED); //Relies on existing list method
         }
 
-	}
+	} 
 
 ```
+
+**Loading a single instance with a BOQL Query **
+
+If you want to load an instance using a BOQL query and you are certain that only that instance exists (i.e. that query will only return a single value). You can use the **uniqueResult** method:
+
+```java
+
+Demo singleInstance = DemoFactory.get().uniqueResult("name = ? ", "John");
+if (singleInstance != null){
+    //Proceed
+} else {
+    //Warning such instance does not exist
+}
+
+```
+
+or with a query without arguments
+
+```java
+
+Demo singleInstance = DemoFactory.get().uniqueResult("name = 'John'");
+if (singleInstance != null){
+    //Proceed
+} else {
+    //Warning such instance does not exist
+}
+```
+
+Notice that the **uniqueResult method will return NULL** when the query returns no results.
