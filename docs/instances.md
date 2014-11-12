@@ -42,7 +42,7 @@ As explained in the Concepts page, you can also include code in your Factory cla
 
 ```
 
-**Loading a single instance with a BOQL Query **
+**Loading a single instance with a BOQL Query**
 
 If you want to load an instance using a BOQL query and you are certain that only that instance exists (i.e. that query will only return a single value). You can use the **uniqueResult** method:
 

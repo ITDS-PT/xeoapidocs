@@ -10,7 +10,7 @@ for (Demo demo : demos){
 }
 
 ```
-The ==XEOCOllection== type is an implementation of ==java.util.Collection== which means you can use all the collection methods available in the API (the following examples will use the java Collection type)
+The **XEOCOllection** type is an implementation of **java.util.Collection** which means you can use all the collection methods available in the API (the following examples will use the java Collection type)
 
 **Note, lists in the new API will iterate through ALL pages**
 
@@ -71,7 +71,7 @@ Collection<Demo> demo = DemoFactory.get().listBuilder( "WHERE_CLAUSE" ) //Create
 
 #### Generic List (any kind of model and specifying the full query)
 
-This type of query is usefull when you need to perform queries like ==select Demo.family where age > 10==. You can use it like the following:
+This type of query is usefull when you need to perform queries like **select Demo.family where age > 10**. You can use it like the following:
 
 ```java
 
@@ -79,4 +79,4 @@ Collection< Demo > results =  XEOApplication.ql( Demo.class , "select Demo.famil
 
 ```
 
-The ==XEOApplication.ql== method return a ==XEOQLBuilder== instance which allows you to customize the query just like with the ==listBuilder== method in factory classes.
+The **XEOApplication.ql** method return a **XEOQLBuilder** instance which allows you to customize the query just like with the **listBuilder** method in factory classes.

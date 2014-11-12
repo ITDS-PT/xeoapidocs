@@ -63,7 +63,7 @@ You can also check if an attribute has a value or not, like the following:
 
 ```
 
-** Notice that, most types of attributes don't have a notion of "empty". Only Strings can be empty.**
+**Notice that, most types of attributes don't have a notion of "empty". Only Strings can be empty.**
 
 #### Metadata of specific types of attributes
 
